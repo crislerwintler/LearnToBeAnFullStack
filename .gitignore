@@ -1,7 +1,7 @@
 # compiled output
 /dist
 /node_modules
-.docker/dbdata
+/.docker
 # Logs
 logs
 *.log
