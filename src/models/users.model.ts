@@ -12,6 +12,6 @@ export class Users {
  email: string;
 @Column()
  phone: number;
-@CreateDateColumn()
+@CreateDateColumn({type: 'timestamp'})
  created_at: Date;
 }
