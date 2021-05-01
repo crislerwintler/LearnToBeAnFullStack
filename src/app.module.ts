@@ -16,9 +16,9 @@ import { UserController } from './controllers/user/user.controller';
       username: process.env.TYPEORM_USERNAME,
       password: process.env.TYPEORM_PASSWORD,
       database: process.env.TYPEORM_DATABASE,
-      entities: [User]
+      entities: [User],
     }),
-    TypeOrmModule.forFeature([User])
+    TypeOrmModule.forFeature([User]),
   ],
   controllers: [AppController, UserController],
   providers: [AppService],

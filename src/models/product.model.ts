@@ -5,20 +5,26 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-@Entity({ name: 'users' })
-export class User {
+@Entity({ name: 'products' })
+export class Product {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
-  firstName: string;
+  pieceName: string;
   @Column()
-  lastName: string;
+  model: string;
   @Column()
-  email: string;
+  refNumber: number;
   @Column()
-  phone: number;
+  quantity: number;
   @Column()
-  isActive: boolean;
+  threadColor: string;
+  @Column()
+  washType: string;
+  @Column()
+  piecePrice: number;
+  @Column()
+  clientNumber: number;
   @CreateDateColumn({ type: 'timestamp' })
   created_at: Date;
 }
