@@ -20,7 +20,9 @@
 [] Cadastrar colaborador
 - id do colaborador
 - nome do colaborador
+- telefone do colaborador
 - email do colaborador
+- senha de acesso
 
 [] Cadastrar execução de Processo
 - id do colaborador

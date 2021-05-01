@@ -1,17 +1,19 @@
 import {Column, CreateDateColumn, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity({name: 'users'})
-export class Users {
+export class User {
 @PrimaryGeneratedColumn()
  id: number;
 @Column()
- first_name: string;
+ firstName: string;
 @Column()
- last_name: string;
+ lastName: string;
 @Column()
- email: string;
+ email : string;
 @Column()
  phone: number;
-@CreateDateColumn({type: 'timestamp'})
+ @Column()
+ isActive: boolean;
+@CreateDateColumn({type:'timestamp'})
  created_at: Date;
 }
