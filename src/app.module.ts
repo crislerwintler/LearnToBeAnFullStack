@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { User } from './models/user.model';
+import { UserController } from './controllers/user/user.controller';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { User } from './models/user.model';
     }),
     TypeOrmModule.forFeature([User])
   ],
-  controllers: [AppController],
+  controllers: [AppController, UserController],
   providers: [AppService],
 })
 export class AppModule {}

@@ -13,7 +13,7 @@ import {
   import { Repository } from 'typeorm';
   
   @Controller('users')
-  export class ProductController {
+  export class UserController {
     constructor(
       @InjectRepository(User)
       private userRepo: Repository<User>,
