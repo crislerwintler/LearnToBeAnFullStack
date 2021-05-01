@@ -10,21 +10,25 @@ export class Product {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
-  pieceName: string;
+  name: string;
+  @Column()
+  customer: string;
   @Column()
   model: string;
   @Column()
-  refNumber: number;
+  reference: number;
   @Column()
   quantity: number;
   @Column()
+  price: number;
+  @Column()
+  sizes: string;
+  @Column()
+  thread: number;
+  @Column()
   threadColor: string;
   @Column()
-  washType: string;
-  @Column()
-  piecePrice: number;
-  @Column()
-  clientNumber: number;
+  wash: string;
   @CreateDateColumn({ type: 'timestamp' })
   created_at: Date;
 }

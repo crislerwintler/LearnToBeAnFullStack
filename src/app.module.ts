@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { User } from './models/user.model';
 import { UserController } from './controllers/user/user.controller';
+import { ProductController } from './controllers/product/product.controller';
 
 @Module({
   imports: [
@@ -20,7 +21,7 @@ import { UserController } from './controllers/user/user.controller';
     }),
     TypeOrmModule.forFeature([User]),
   ],
-  controllers: [AppController, UserController],
+  controllers: [AppController, UserController, ProductController],
   providers: [AppService],
 })
 export class AppModule {}
