@@ -31,8 +31,8 @@ export class UserController {
 
   @Post()
   store(@Body() body) {
-    const product = this.userRepo.create(body);
-    return this.userRepo.save(product);
+    const user = this.userRepo.create(body);
+    return this.userRepo.save(user);
   }
 
   @Put(':id')
