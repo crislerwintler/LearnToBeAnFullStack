@@ -31,7 +31,7 @@ export class CreateProductTable1619867414320 implements MigrationInterface {
           },
           {
             name: 'quantity',
-            type: 'varchar',
+            type: 'number',
           },
           {
             name: 'price',
