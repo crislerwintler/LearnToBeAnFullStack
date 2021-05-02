@@ -13,7 +13,7 @@ import { Product } from 'src/models/product.model';
 import { Repository } from 'typeorm';
 
 @Controller('products')
-export class UserController {
+export class ProductController {
   constructor(
     @InjectRepository(Product)
     private productRepo: Repository<Product>,
