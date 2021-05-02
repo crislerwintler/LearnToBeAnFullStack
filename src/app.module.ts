@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { User } from './models/user.model';
 import { UserController } from './controllers/user/user.controller';
 import { ProductController } from './controllers/product/product.controller';
+import { Product } from './models/product.model';
 
 @Module({
   imports: [
@@ -17,9 +18,9 @@ import { ProductController } from './controllers/product/product.controller';
       username: process.env.TYPEORM_USERNAME,
       password: process.env.TYPEORM_PASSWORD,
       database: process.env.TYPEORM_DATABASE,
-      entities: [User],
+      entities: [User, Product],
     }),
-    TypeOrmModule.forFeature([User]),
+    TypeOrmModule.forFeature([User, Product]),
   ],
   controllers: [AppController, UserController, ProductController],
   providers: [AppService],
